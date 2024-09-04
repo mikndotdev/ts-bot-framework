@@ -1,4 +1,4 @@
-# ts-bot-ramework
+# ts-bot-framework
 
 To install dependencies:
 
