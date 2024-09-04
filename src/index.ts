@@ -1,7 +1,6 @@
 import { deployCommands } from "./deploy";
 import { setPresence } from "./presence";
 import { handleCommand } from "./handlers/command";
-import { handleLevel } from "./handlers/lvl";
 import { Client, GatewayIntentBits, EmbedBuilder } from "discord.js";
 
 const client = new Client({
@@ -48,7 +47,6 @@ client.on("interactionCreate", async (interaction) => {
 client.on("messageCreate", async (message) => {
     if (message.author.bot) return;
     console.log("Received message!");
-    await handleLevel(message);
 });
 
 client.on("guildCreate", async (guild) => {});
